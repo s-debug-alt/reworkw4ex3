@@ -18,12 +18,12 @@ namespace reworkw4ex3
             { // Loop through columns
 
               for (int j= 0; j < matrix.GetLength(1); j++) 
-                { // display matrix 
+                { // display matrix by tabular
                     Console.Write(matrix[i, j] + "\t"); 
-                } // enter newline for rows
+                } // enter newline
                 Console.WriteLine();
             }
-            // declare sum by tabular
+            // init sum to 0
          int sum  = 0;
             // go through each element
             foreach (int i in matrix)
@@ -60,7 +60,7 @@ namespace reworkw4ex3
                 for (int j =0; j < transposed.GetLength(1); j++) 
                 { // display transposed by tabular
                   Console.Write(transposed[i, j] + "\t");
-                } // enter a newline for rows
+                } // enter a newline
               Console.WriteLine(); } 
             // wait for input before closing 
             Console.Read();
